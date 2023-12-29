@@ -1,38 +1,1280 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a{
+  width: 60px;
 }
+.navbar{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: black;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_logo{
+  border-radius: 20%;
+  width: 100%;
+}
+.collapse{
+  justify-content: flex-end;
+}
+.collapse ul{
+  margin-right: 25%;
+}
+.nav-item {
+  margin: 0 6%;
+  font-size: 15px;
+  font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:#fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: yellow;
+}
+.navbar   input {
+  background: #c19976;
+  color: #fff;
+  font-weight: 700;
+}
+.navbar   .search{
+  font-size: 25px;
+  color: #fff;
+}
+.notification_box {
+  font-size: 25px;
+  color: #fff;   
+}
+.d-flex .btn:hover {
+  color: yellow;
+}
+.hero_section{
+  background-image: url(./images/hero_bg.jpg);
+  height: 87vh;
+  width: 100%;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.hero_section h1 {
+  color: #e5ccacbf;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.hero_section h5{
+    font-size: 22px;
+    color: antiquewhite;
+}
+.hero_section button {
+  font-size: 23px;
+  font-weight: 400;
+  padding: 12px 15px;
+  color: azure;
+  background: #9d5d5d;
+  border: 2px solid darkkhaki ;
+  ;
+}
+.chef_words{
+  background:#0e1317 ;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+.chef_words .chef_center{
+  position: relative;
+  text-align: center;
+}
+.chef_words .chef_center p:first-child{
+  color: #c5996e;
 }
 
-.App-link {
-  color: #61dafb;
+.chef_words .chef_left{
+  /* background: aqua; */
+  height: 418px;
+  width: 370px;
+  display: flex;
+  justify-content: center;
+}
+.chef_words .chef_left img{
+  height: 100%;
+  width: 79%;
+}
+.chef_words .chef_right{
+  /* background: aqua; */
+  height: 418px;
+  width: 370px;
+  display: flex;
+  justify-content: center;
+}
+.chef_words .chef_right img{
+  height: 100%;
+  width: 79%;
+}
+.chef_words  .chef_bottom{
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* slider */
+.slider_box{
+  background-color: #0e1317;
+  height: 130vh;
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+}
+.slider_box p{
+  color: rgb(173, 173, 76);
+}
+.slider_box .slider_line{}
+.slider_box .slider_menu{
+  height: 100%;
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider_box .slider_menu .menu_one p:nth-child(3){
+  color: #fff;
+}
+.slider_box .slider_menu .menu_two p:nth-child(3){
+  color: #fff;
+}
+.slider_box .slider_menu .menu_three p:nth-child(3){
+  color: #fff;
+}
+.slider_box .slider_menu .menu_one {
+  background-position: top;
+  background-image: url(./images/mene_one.png);
+  height: 140px;
+  width: 260px;
+  /* margin: 0 85px 0 0; */
+  background-size: 91%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.slider_box .slider_menu .menu_text .btn  {
+  position: relative;
+}
+.slider_box .slider_menu .menu_text .btn  #menu_icon {
+  width: 42px;
+  height: 54px;
+  position: absolute;
+  left: -6px;
+  top: -17px;
+  color: #bbbb3c;
+}
+.slider_box .slider_menu  .menu_text{
+  position: absolute;
+  left: -2%;
+  top: 50%;
+  width: 100%;
+  text-align: left;
+}
+.slider_box .slider_menu .menu_two{
+  background-position: top;
+  background-image: url(./images/mene_one.png);
+  height: 140px;
+  width: 260px;
+  /* margin: 0 85px 0 0; */
+  background-size: 91%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.slider_box .slider_menu .menu_three{
+  background-position: top;
+  background-image: url(./images/mene_one.png);
+  height: 140px;
+  width: 260px;
+  /* margin: 0 85px 0 0; */
+  background-size: 91%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* slider */
+
+
+.daily_offer{
+  background-image: url(./images/daliy_offer.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.daily_offer h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.daily_offer .offer_box{
+  padding: 50px 0;
+}
+.daily_offer .offer_box p:nth-child(1){
+  color: #bbbb3c;
+}
+.offer_box_one .offer_p{
+  color: #dbd5d5 !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+.offer_box_two .offer_p{
+  color: #dbd5d5 !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+.offer_box_three .offer_p{
+  color: #dbd5d5 !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+.offer_box_four .offer_p{
+  color: #dbd5d5 !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+.daily_offer .offer_box .offer_box_one p{
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+}
+.daily_offer .offer_box .offer_box_two p{
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+}
+.daily_offer .offer_box .offer_box_three p{
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+}
+.daily_offer .offer_box .offer_box_four p{
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+}
+.daily_offer .offer_box  span{
+  color: #bbbb3c !important;
+  font-weight:700;
+}
+.daily_offer .offer_btn {
+  background-color: #222e3c;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #c39975;
+  font-weight: 500;
+  font-size: 16px;
+}
+.guest_booking {
+  /* background-image: url(./images/slider_4.jpg); */
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 150vh;
+  background-color: #0e1317;
+  color: #fff;
+  padding-top: 58px;
+}
+.guest_booking .guest_book img{
+  margin: 15px 0 30px 0;
+}
+.guest_booking .guest_book p{
+  color: #bbbb3c ;
+  font-size: 18px;
+
+}
+.guest_booking .guest_book {
+  width: 80%;
+}
+.guest_booking .guest_book button{
+  background-color: #222e3c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.guest_booking .box_one {
+    border: 1px solid #bbbb3c;
+    padding: 21px 43px 10px 44px;
+    position: relative;
+}
+.guest_booking .box_one .img_box img{
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+}
+.guest_booking .box_one p{
+  font-size: 19px ;
+}
+
+.guest_booking .box_one .about{
+  margin-top: 36px;
+}
+.guest_booking .box_one .daily_img{
+  position: absolute;
+  top: -39px;
+  width: 55px;
+  left: 13px;
+}
+.guest_booking .booking_section{
+  background-image: url(./images/gust_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 62vh;
+  width: 100%;
+  position: relative;
+  top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin: 0 40px; */
+  /* text-align: center; */
+}
+.guest_booking .booking_section h4{
+  font-size: 42px;
+  font-weight: 400;
+  z-index: 1;
+}
+.guest_booking .booking_section button {
+  background-color: #c59260;
+  color: #fff;
+  padding: 10px 32px;
+  border: 2px solid #9ca481;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 35px 0 0 0;
+  z-index: 1;
+}
+.booking_layer {
+  background-color: #c5926061;
+  width: 100%;
+  height: 62vh;
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
+}
+.gust_last{
+  position: relative;
+  left: 0;
+  top: 105px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  background-color: #0e1317;
+}
+.gust_last h4{
+  font-size: 50px;
+  font-weight: 300;
+  color: #bbbb3c;
+}
+.news_section{
+  color: #fff;
+  background: #0e1317;
+  text-align: center;
+  padding: 50px 0 300px 0 ;
+}
+.news_section p{
+  color: #bbbb3c;
+  padding-left: 15px;
+}
+.news_section h5{
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.news_section button{
+  background-color: #222e3c;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #c39975;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 50px;
+}
+.cards{
+  padding: 70px 0 0  0;
+}
+.card_1 hr {
+  color: yellow;
+  font-size: 12px;
+  height: 4px;
+  width: 40%;
+}
+.card_1{
+  background-color: #1d2023;
+  width: 80%;
+  padding: 0 0 15px 0 ;
+  text-align: left;
+  margin: auto;
+}
+.card_1 .img_box {
+  width: 100%;
+}
+.card_1 .img_box img{
+  width: 100%;
+}
+.card_2 hr {
+  color: yellow;
+  font-size: 12px;
+  height: 4px;
+  width: 40%;
+  margin-left: 30%;
+}
+.card_2{
+  background-color: #1d2023;
+  width: 80%;
+  padding: 0 0 15px 0 ;
+  text-align: left;
+  margin: auto;
+}
+.card_2 .img_box {
+  width: 100%;
+}
+.card_2 .img_box img{
+  width: 100%;
+}
+.card_3 hr {
+  color: yellow;
+  font-size: 12px;
+  height: 4px;
+  width: 40%;
+  margin-left: 60%;
+}
+.card_3{
+  background-color: #1d2023;
+  width: 80%;
+  padding: 0 0 15px 0 ;
+  text-align: left;
+  margin: auto;
+}
+.card_3 .img_box {
+  width: 100%;
+}
+.card_3 .img_box img{
+  width: 100%;
+}
+.socila_section img{
+  width: 14%;
+  border-radius: 20px 0;
+  border: 2px solid orangered;
+
+}
+footer{
+  background: #090b0c;
+  padding: 250px 0 0 0;
+  color: aliceblue;
+  text-align: center;
+}
+footer .contact_section {
+  text-align: left;
+  width: 100%;
+  padding: 0 0 0 30%;
+}
+footer .contact_section p{
+  display: flex;
+}
+footer .contact_section span{
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  color: #bbbb3c;
+}
+footer .socila_section{
+  text-align: center;
+  width: 100%;
+}
+footer .working_secton{
+  text-align: right;
+  width: 80%;
+}
+footer .working_secton span{
+  color: #bbbb3c;
+}
+footer h6{
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.twitter, .facebook, .linkedin, .instagram{
+  border-radius: 50%;
+  height: 37px;
+  width: 38px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+}
+.social_links a{
+  text-decoration: none;
+}
+.social_links{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+.booking_form h4 {
+  margin: 40px;
+}
+.booking_form .name {
+  width: 45%;
+  position: relative;
+  left: 0;
+  text-align: left;
+  border-bottom:2px solid #fff;
+}
+.booking_form .name label{
+  position: relative;
+  bottom: -18px;
+  font-size: 18px;
+}
+.booking_form .name input{
+  background: transparent;
+  /* border-bottom-color: #fff; */
+  color: #fff;
+  width: 100%;
+  border: none;
+}
+
+.booking_form .mobile{
+  width: 45%;
+  position: relative;
+  left: 54%;
+  text-align: left;
+  border-bottom: 2px solid #fff;
+  top: -53px;
+}
+.booking_form .mobile label{
+  position: relative;
+  bottom: -18px;
+  font-size: 18px;
+}
+.booking_form .mobile input{
+  background: transparent;
+  /* border-bottom-color: #fff; */
+  color: #fff;
+  width: 100%;
+  border: none;
+}
+.booking_form {
+  background-color: #1a232b;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+}
+
+.table{
+  width: 100%;
+  border-bottom:2px solid #fff;
+  font-size: 18px;
+
+}
+
+.table  select{
+  background: #1a232b;
+  color: #fff;
+  width: 100%;
+  border: none;
+}
+.date {
+  border-bottom:2px solid #fff;
+  font-size: 18px;
+
+}
+.date input{
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  border: none;
+}
+.time {
+  border-bottom:2px solid #fff;
+  font-size: 18px;
+}
+.time input{
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+.booking_form .booking_btn{
+  background-color: #c59260;
+  color: #fff;
+  padding: 10px 32px;
+  border: 2px solid #9ca481;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 35px 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .collapse ul {
+    margin-right: 15%;
+}
+.nav-item {
+  margin: 0 5%;
+  font-size: 13px;
+  font-weight: 600;
+}
+  .hero_section h1 {
+    font-size: 45px;
+}
+.hero_section button {
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.chef_words .chef_left {
+  width: 350px;
+}
+.chef_words .chef_right {
+  width: 320px;
+  justify-content: flex-start;
+}
+.chef_words {
+  height: 110vh;
+}
+.guest_booking .box_one p {
+  font-size: 14px;
+}
+.guest_booking .box_one .img_box img {
+  position: absolute;
+  left: 10px;
+}
+/* .guest_booking {
+  height: 160vh;
+} */
+}
+
+
+@media screen and (max-width: 991px){
+  .navbar-light .navbar-toggler {
+    color: #b1272778;
+    border-color: #e3d6c3;
+    background: #9d5d5d;
+}
+.chef_words .chef_left  {
+  position: relative;
+}
+.chef_words .chef_right {
+  justify-content: flex-end;
+}
+.chef_words .chef_left img {
+  height: 100%;
+  width: 79%;
+  position: absolute;
+  left: -22%;
+}
+.chef_center .center_p_1 {
+  font-size: 15px;
+}
+.chef_words .chef_bottom {
+  /* margin: auto; */
+  position: absolute;
+  left: 8%;
+}
+.chef_words {
+  height: 125vh;
+}
+.slider_box .slider_menu .menu_one {
+  margin: auto;
+}
+.slider_box .slider_menu .menu_two {
+  top: 62%;
+  margin: auto;
+}
+.slider_box .slider_menu .menu_three {
+  top: 170px;
+  margin: auto;
+}
+.slider_box .slider_menu .menu_text {
+  top: 35%;
+  font-size: 14px;
+}
+.slider_box {
+  height: 241vh;
+}
+.offer_box_one .offer_p {
+  font-size: 13px !important;
+}
+.daily_offer .offer_box .offer_box_one p {
+  font-size: 15px;
+}
+.offer_box_two .offer_p {
+  font-size: 13px !important;
+}
+.daily_offer .offer_box .offer_box_two p {
+  font-size: 15px;
+}
+.offer_box_three .offer_p {
+  font-size: 13px !important;
+}
+.daily_offer .offer_box .offer_box_three p {
+  font-size: 15px;
+}
+.offer_box_four .offer_p {
+  font-size: 13px !important;
+}
+.daily_offer .offer_box .offer_box_four p {
+  font-size: 15px;
+}
+.daily_offer .offer_box {
+  position: relative;
+  left: -13%;
+}
+.daily_offer .daily_img{
+  width: 23%;
+  margin: 13px 0;
+}
+.guest_booking .guest_book {
+  width: 100%;
+}
+.guest_booking .guest_book h4{
+  font-size: 21px;
+  font-weight: 400;
+}
+.guest_booking .guest_book img {
+  margin: 0px 0 10px 0;
+  width: 75%;
+}
+.guest_booking .box_one {
+  padding: 21px 7px 10px 11px;
+  position: relative;
+}
+.guest_booking .box_one .about .text_box h5{
+  font-size: 13px;
+  padding-top: 10px;
+}
+.card_1 {
+  width: 100%;
+}
+.card_2 {
+  width: 100%;
+}
+.card_3  {
+  width: 100%;
+}
+footer .contact_section {
+  text-align: left;
+  width: 100%;
+  padding: 0 0 0 0%;
+  position: relative;
+  left: -50px;
+}
+footer .socila_section {
+  font-size: 18px;
+}
+.working_secton {
+  width: 100%;
+  position: relative;
+  right: -20%;
+  font-size: 16px;
+}
+.footer{
+  position: absolute;
+}
+.socila_section img {
+  width: 20%;
+}
+}
+
+@media screen and (max-width: 768px){
+  
+  .hero_section h5 {
+    font-size: 18px;
+}
+.hero_section h1 {
+  font-size: 35px;
+}
+.hero_section button {
+  font-size: 16px;
+  padding: 8px 11px;
+}
+.chef_words .chef_right {
+  width: 250px;
+  justify-content: flex-start;
+}
+.chef_words .chef_right img {  
+  width: 100%;
+}
+.chef_words .chef_left {
+  width: 327px;
+}
+.chef_words .chef_left img {
+  left: -9%;
+}
+.chef_words .chef_bottom {
+  width: 80%;
+}
+.chef_center .chef_center_2{
+  position: relative;
+  left: 9px;
+  top: -6px;
+  width: 90%;
+}
+.chef_words .chef_right img {
+  z-index: 1;
+}
+.chef_words .chef_left img {
+  z-index: 1;
+}
+.slider_box .slider_menu {
+  width: 99%;
+}
+.daily_offer .offer_box {
+  position: relative;
+  left: 0%;
+}
+.daily_offer {
+  background-position-x: left;
+}
+
+.daily_offer .daily_img {
+  width: 26%;
+  margin: 13px 0;
+}
+footer .contact_section {
+    text-align: left;
+    width: 100%;
+    padding: 0 0 0 0%;
+    position: relative;
+    left: 0%;
+    font-size: 14px;
+}
+.booking_form .name label {
+  font-size: 16px;
+}
+.booking_form .mobile label {
+  font-size: 16px;
+}
+.table {
+  font-size: 16px;
+}
+.date {
+  font-size: 16px;
+}
+.time {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 580px){
+  .chef_words .chef_left {
+    width: 326px;
+    left: 20px;
+    height: 261px;
+    top: -20px;
+    text-align: center;
+}
+.chef_words .chef_left img {
+  width: 100%;
+}
+.chef_words {
+  height: 152vh;
+}
+.chef_words .chef_center {
+  position: relative;
+  text-align: center;
+  width: 54%;
+  /* margin: auto; */
+  top: -5%;
+  right: 25px;
+}
+.chef_words .chef_right {
+  width: 250px;
+  justify-content: flex-start;
+  position: relative;
+  top: -54%;
+  right: -34%;
+}
+.chef_words {
+  position: relative;
+} 
+.chef_words .chef_bottom {
+  width: 80%;
+  bottom: 4%;
+}
+.daily_offer {
+  background-position-x: center;
+}
+.guest_booking .guest_book {
+  width: 53%;
+  margin: auto;
+}
+.guest_booking .box_one {
+  margin-top: 55px;
+}
+.booking_layer {
+    height: 62vh;
+    bottom: 0px;
+}
+.guest_booking .booking_section h4 {
+  font-size: 32px;
+}
+.guest_booking .booking_section button {
+  padding: 7px 20px;
+  font-size: 13px;
+  margin: 20px 0 0 0;
+}
+.gust_last {
+  top: 60px;
+}
+.news_section {
+  position: relative;
+  top: 570px;
+}
+.card_3 {
+  width: 100%;
+  margin-top: 10%;
+}
+footer {
+
+  position: relative;
+  top: 569px;
+}
+footer .contact_section {
+  width: 81%;
+  left: -10%;
+  font-size: 13px;
+}
+footer .socila_section {
+  font-size: 14px;
+  position: relative;
+  left: -15px;
+}
+footer .socila_section img {
+  width: 29%;
+  position: relative;
+  top: -16px;
+}
+footer .working_secton {
+  text-align: right;
+  width: 100%;
+  font-size: 14px;
+  right: 0;
+}
+.social_links {
+  width: 100%;
+}
+.twitter, .facebook, .linkedin, .instagram {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+}
+.booking_form {
+  z-index: 1;
+}
+}
+
+@media screen and (max-width: 520px){
+  .guest_booking .box_one {
+    margin-top: 55px;
+    width: 45%;
+}
+.guest_booking .box_one {
+  margin: 25px auto;
+  top: 25px;
+}
+.guest_booking .box_one .text_box 
+  {
+    width: 80%;
+    margin-left: 75px;
+}
+.guest_booking {
+  height: 180vh;
+}
+.card_1 {
+  width: 70%;
+  margin:10px auto;
+}
+.card_2 {
+  width: 70%;
+  margin:10px auto;
+}
+.card_3 {
+  width: 70%;
+  margin:10px auto;
+}
+footer .contact_section {
+  left: 0;
+}
+footer .socila_section img {
+  width: 17%;
+  position: relative;
+  top: 0;
+}
+footer .working_secton {
+  width: 38%;
+  right: -52%;
+  top: -200%;
+}
+footer .socila_section {
+  left: 10%;
+  width: 72%;
+}
+.booking_form .name {
+  width: 80%;
+  top: -29px;
+  margin: auto;
+}
+.booking_form .mobile {
+  width: 80%;
+  left: 0;
+  top: -25px;
+  margin: auto;
+}
+.table {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: -8px;
+}
+.date {
+  width: 80%;
+  margin: auto;
+}
+.time {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 10px;
+}
+footer {
+  padding: 200px 0 0 0;
+}
+.booking_form {
+  padding-bottom: 35px;
+}
+}
+@media screen and (max-width: 480px){
+.chef_words {
+    height: 200vh;
+}
+.chef_words .chef_left img {
+  left: 10%;
+}
+.chef_words .chef_center {
+  width: 80%;
+  top: -8%;
+  right: -34px;
+}
+.chef_words .chef_right img {
+  z-index: 1;
+  top: 37%;
+  left: -17%;
+}
+.chef_words .chef_right img {
+  z-index: 1;
+  top: 54%;
+  left: -17%;
+}
+.chef_center .chef_center_2 {
+  position: relative;
+  left: 1px;
+  top: -2px;
+  width: 56%;
+}
+
+.chef_words .chef_right {
+  top: -58%;
+  right: -6%;
+  width: 374px;
+  height: 260px;
+}
+.chef_words .chef_right img {
+  z-index: 1;
+  top: 54%;
+  left: 0;
+}
+.guest_booking .box_one .text_box {
+  margin-left: 65px;
+}
+.guest_booking .box_one .img_box img {
+  height: 60px;
+  width: 60px;
+  left: 6px;
+}
+.booking_form .booking_btn {
+  margin: 35px 0 0px 0;
+}
+}
+@media screen and (max-width: 420px){
+  .daily_offer .offer_box .offer_box_one p {
+    font-size: 14px;
+}
+  .daily_offer .offer_box .offer_box_two p {
+    font-size: 14px;
+}
+  .daily_offer .offer_box .offer_box_three p {
+    font-size: 14px;
+}
+  .daily_offer .offer_box .offer_box_four p {
+    font-size: 14px;
+}
+.guest_booking .box_one {
+  margin-top: 55px;
+  width: 65%;
+}
+/* .guest_booking {
+  height: 270vh;
+} */
+.news_section button {
+  margin: 20px 0 0 0;
+}
+.booking_form h4 {
+  margin: 30px;
+}
+.booking_form {
+  margin-top: 15px;
+}
+footer {
+  padding: 115px 0 0 0;
+}
+}
+@media screen and (max-width: 360px){
+  .chef_words .chef_left img {
+    left: -2%;
+}
+.chef_words .chef_right img {
+  left: 2%;
+}
+.chef_words .chef_left {
+  left: 14px;
+}
+.chef_words .chef_right {
+  right: 2%;
+  width: 336px;
+}
+.chef_words {
+  height: 203vh;
+}
+.chef_words .chef_bottom {
+  width: 90%;
+  bottom: 2%;
+  left: 5%;
+}
+.daily_offer .offer_box .offer_box_one p {
+  font-size: 12px;
+}
+.daily_offer .offer_box .offer_box_two p {
+  font-size: 12px;
+}
+.daily_offer .offer_box .offer_box_three p {
+  font-size: 12px;
+}
+.daily_offer .offer_box .offer_box_four p {
+  font-size: 12px;
+}
+.daily_offer {
+  height: 87vh;
+  background-size: 1056px;
+}
+.guest_booking .box_one {
+  margin-top: 55px;
+  width: 85%;
+}
+.guest_booking .guest_book {
+  width: 80%;
+}
+.guest_booking .booking_section h4 {
+  font-size: 25px;
+}
+.card_1 {
+  width: 80%;
+}
+.card_2 {
+  width: 80%;
+}
+.card_3 {
+  width: 80%;
+}
+footer .working_secton {
+  width: 44%;
+  right: -52%;
+  top: -200%;
+}
+footer .socila_section {
+  left: 5%;
+  width: 90%;
+}
+}
+@media screen and (max-width: 320px){
+  .hero_section h1 {
+    font-size: 33px;
+}
+.hero_section h5 {
+    font-size: 16px;
+}
+.chef_words .chef_right {
+  right: 6%;
+  width: 305px;
+}
+.chef_words .chef_left {
+  left: -26px;
+}
+.chef_words .chef_left {
+  width: 301px;
+  left: -5px;
+  height: 248px;
+  top: -20px;
+}
+.daily_offer h3 {
+  font-size: 23px;
+  font-weight: 400;
+}
+.daily_offer .daily_img {
+  width: 50%;
+  margin: 3px 0;
+}
+.daily_offer .offer_box span {
+  font-size: 9px;
+}
+.daily_offer .offer_box span span  {
+  font-size: 12px;
+  font-weight: 900;
+}
+.daily_offer .offer_box .offer_box_four p {
+  font-size: 11px;
+}
+.daily_offer .offer_box .offer_box_two p {
+  font-size: 13px;
+}
+.slider_box .slider_menu {
+  width: 98%;
+}
+.daily_offer .offer_btn {
+  font-size: 11px;
+}
+.card_1 {
+  width: 90%;
+}
+.card_2 {
+  width: 90%;
+}
+.card_3 {
+  width: 90%;
+}
+footer .working_secton {
+  width: 50%;
+  right: -50%;
+  top: -201%;
+}
 }
